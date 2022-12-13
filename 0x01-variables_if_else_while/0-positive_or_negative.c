@@ -5,7 +5,7 @@
  *  * main - Entry point
  *   *
  *    * Return: Allow success
- **/
+*/
 int main(void)
 {
 	int n;
