@@ -11,7 +11,7 @@ int main(void)
 
 	for (x = 0; x < 8; x++)
 	{
-		for (y = x + 1; z <= 9; z++)
+		for (y = x + 1; z < 9; z++)
 		{
 			if (!(x == y || x == z || y == z))
 			{
