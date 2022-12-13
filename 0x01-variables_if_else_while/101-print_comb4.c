@@ -11,18 +11,21 @@ int main(void)
 
 	for (x = 0; x < 8; x++)
 	{
-		for (y = x + 1; z < 9; z++)
+		for (y = x + 1; y < 9; y++)
 		{
-			if (!(x == y || x == z || y == z))
+			for (z = y + 1; z <= 9; z++)
 			{
-			putchar(x + '0');
-			putchar(y + '0');
-			putchar(z + '0');
-			if (!(x == 7 && y == 8 && z == 9))
-			{
-				putchar(',');
-				putchar(',');
-			}
+				if (!(x == y || x == z || y == z))
+				{
+				putchar(x + '0');
+				putchar(y + '0');
+				putchar(z + '0');
+				if (!(x == 7 && y == 8 && z == 9))
+				{
+					putchar(',');
+					putchar(',');
+				}
+				}
 			}
 		}
 	}
