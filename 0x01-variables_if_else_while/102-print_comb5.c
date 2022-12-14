@@ -16,7 +16,7 @@ int main(void)
 			{
 				for (s = 0; s <= 9; s++)
 				{
-					if (!(p == r && q == s) || !(p == q && p == r && p == s && q == r && q == s && s == r))
+				if (!(p == r && q == s) || !(p == q && p == r && p == s && q == r && q == s && s == r))
 					{
 					putchar(p + '0');
 					putchar(q + '0');
